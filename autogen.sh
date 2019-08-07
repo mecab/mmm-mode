@@ -12,7 +12,7 @@ if test -n "$notfound"; then
     echo OOPS: I can\'t find $notfound in your path!
     echo You need aclocal, automake, and autoconf to generate configure.
     echo Otherwise, you can install manually, see the README file.
-    exit;
+    exit 1;
 fi
 
 echo -n Running aclocal to generate aclocal.m4...
